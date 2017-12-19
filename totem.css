@@ -1,0 +1,30 @@
+/* 
+    Created on : Dec 19, 2017, 3:56:33 AM
+    Author     : oscar
+*/
+html{
+	
+	height:100%;
+}
+body{
+	background-color: #000;
+	margin:0;
+	padding: 0;
+	height:100%;
+  display: flex;  
+	flex-flow: column;
+}
+video{
+	width: 100%;
+	flex: 0 0 auto;
+}
+ul{
+  display: flex;  
+	flex-flow: row;
+	background-color: #fff;
+	list-style: none;
+}
+iframe{
+	width: 100%;
+  flex: 1 0 auto;
+}
