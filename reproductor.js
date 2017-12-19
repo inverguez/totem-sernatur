@@ -1,4 +1,3 @@
-
 /*
  * CRÉDITOS (Inspiración)
  * Apple https://developer.apple.com/library/content/documentation/AudioVideo/Conceptual/Using_HTML5_Audio_Video/ControllingMediaWithJavaScript/ControllingMediaWithJavaScript.html#//apple_ref/doc/uid/TP40009523-CH3-SW5
