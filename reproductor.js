@@ -15,8 +15,8 @@ videos[4]='videos/mp4/SERNATUR-gira_calama.mp4';
 videos[5]='videos/mp4/SERNATUR-la_tirana.mp4';
 videos[6]='videos/mp4/SERNATUR-mujer_empresaria.mp4';/*
 videos[7]='videos/mp4/centro_historico.mov';*/
-videos[8]='videos/mp4/la_escoba.mp4';
-videos[9]='videos/mp4/find_your_Chile.mp4';
+videos[7]='videos/mp4/la_escoba.mp4';
+videos[8]='videos/mp4/find_your_Chile.mp4';
 
 var n_videos = videos.length;
 var i=0;
@@ -25,6 +25,7 @@ function ejecuta()
 {
 	var elVideo = document.getElementsByTagName('video')[0];
 	elVideo.addEventListener('ended', cambiaVideo, false);
+	document.getElementsByTagName('html')[0].requestFullscreen();
 }
 
 window[ addEventListener ? 'addEventListener' : 'attachEvent' ]( addEventListener ? 'load' : 'onload', ejecuta );
