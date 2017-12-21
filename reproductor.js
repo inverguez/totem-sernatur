@@ -25,10 +25,14 @@ function ejecuta()
 {
 	var elVideo = document.getElementsByTagName('video')[0];
 	elVideo.addEventListener('ended', cambiaVideo, false);
-	document.getElementsByTagName('html')[0].requestFullscreen();
+	
+	//Intento de abrir en pantalla completa
+	//https://msdn.microsoft.com/en-us/library/dn265028(v=vs.85).aspx
+	document.getElementsByTagName('body')[0].requestFullscreen();
 }
 
 window[ addEventListener ? 'addEventListener' : 'attachEvent' ]( addEventListener ? 'load' : 'onload', ejecuta );
+window.addEventListener("touchstart", touchHandler, false);
 
 function cambiaVideo()
 {
@@ -44,4 +48,14 @@ function dalePlay(videoNum)
 	document.getElementsByTagName('video')[0].setAttribute("src",videos[videoNum]);
 	document.getElementsByTagName('video')[0].load();
 	document.getElementsByTagName('video')[0].play();
+}
+
+//Blockear zoom
+//https://stackoverflow.com/a/37712966/3369131
+function touchHandler(event){
+    if(event.touches.length > 1){
+        //the event is multi-touch
+        //you can then prevent the behavior
+        event.preventDefault();
+    }
 }
