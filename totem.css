@@ -24,8 +24,8 @@ ul{
   flex: 0 0 auto;
   display: table;
 	width: 100%;
-	background-color: #000;
-	padding:2% 0 0 0;
+	background-color: navy;
+	padding:0;
 	margin:0;
 	font-family: sans-serif;
 	font-size: 60%;
@@ -35,6 +35,14 @@ ul li{
 	width:33%;
 	text-align: center;
 	vertical-align: middle;
+	margin:0;
+	padding: 2px 0 0 0;
+}
+ul li:first-child{
+	text-align: left;
+}
+ul li:last-child{
+	text-align: right;
 }
 ul li a{
 	width: 100%;
@@ -46,9 +54,10 @@ ul li a{
 	text-indent: 0;
 }
 ul li a img{
-	height: 3em;
+	height: 100px;
 }
 iframe{
 	width: 100%;
   flex: 1 0 auto;
+	border:0;
 }
