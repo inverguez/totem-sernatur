@@ -13,10 +13,10 @@
   <body>
 		<video autoplay src="videos/mp4/find_your_Chile.mp4"></video>
 		<ul>
-			<li><a href="Plano_iquique.jpg" target="navegador" id="myBtn"><!--
+			<li><a href="Plano_iquique.jpg" target="navegador" id="abrirMapa1"><!--
 					<img src="Abrir_plano_iqq.png" alt="-->Plano de Iquique<!--" />-->
 				</a></li>
-			<li><a href="Plano_tarapaca.jpg" target="navegador"><!--
+			<li><a href="Plano_tarapaca.jpg" target="navegador" id="abrirMapa2"><!--
 							<img src="Abrir_plano_tar.png" alt="-->Mapa de Tarapacá<!--" />-->
 						</a></li>
 			<li><a href="http://serviciosturisticos.sernatur.cl/movil/" target="navegador">
@@ -26,42 +26,63 @@
 		<iframe src="http://serviciosturisticos.sernatur.cl/movil/" name="navegador"></iframe>
 		
 		<!-- The Modal -->
-<div id="myModal" class="modal">
-
+<div id="mapa1" class="modal">
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
     <img src="Plano_iquique.jpg" alt="Plano de Iquique" />
   </div>
-
+</div>
+		
+		<div id="mapa2" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="Plano_tarapaca.jpg" alt="Mapa de Tarapacá" />
+  </div>
 </div>
 		
 <script>
+//Código copiado de
+
 // Get the modal
-var modal = document.getElementById('myModal');
+var modal = document.getElementById('mapa1');
+var modal2 = document.getElementById('mapa2');
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var btn = document.getElementById("abrirMapa1");
+var btn2 = document.getElementById("abrirMapa2");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
+var span2 = document.getElementsByClassName("close")[1];
 
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
     modal.style.display = "block";
-}
+		return false;
+};
+btn2.onclick = function() {
+    modal2.style.display = "block";
+		return false;
+};
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
-}
+};
+span2.onclick = function() {
+    modal2.style.display = "none";
+};
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    if (event.target == modal) {
+    if (event.target === modal) {
         modal.style.display = "none";
-    }
-}
+    } else if (event.target === modal2){
+        modal2.style.display = "none";
+		}
+};
 </script>
 	</body>
 </html>
