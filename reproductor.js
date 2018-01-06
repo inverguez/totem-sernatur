@@ -7,17 +7,12 @@
 
 var videos = new Array();
 
-videos[0]='videos/mp4/21_mayo.mp4';
-videos[1]='videos/mp4/OIT_Tamarigal.mp4';
-videos[2]='videos/mp4/cuenta_publica.mp4';
-videos[3]='videos/mp4/excelencia_atencion.mp4';
-videos[4]='videos/mp4/gira_calama.mp4';
-videos[5]='videos/mp4/la_tirana.mp4';
-videos[6]='videos/mp4/mujer_empresaria.mp4';/*
-videos[7]='videos/mp4/centro_historico.mov';*/
-videos[7]='videos/mp4/la_escoba.mp4';
-videos[8]='videos/mp4/find_your_Chile.mp4';
-
+videos[0]='videos/mp4/Vinos.mp4';
+videos[1]='videos/mp4/Cultura.mp4';
+videos[2]='videos/mp4/Naturaleza.mp4';
+videos[3]='videos/mp4/Salud.mp4';
+videos[4]='videos/mp4/Vida.mp4';
+videos[5]='videos/mp4/Aventura.mp4';
 var n_videos = videos.length;
 var i=0;
 
