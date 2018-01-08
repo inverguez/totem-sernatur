@@ -6,4 +6,4 @@ Pantalla de los totems que puso SERNATUR para la venida del Papa
 La resolución de las pantallas táctiles era de 768x1360.
 
 Demo
-https://ooscarr.github.io/totem-sernatur/
+https://inverguez.github.io/totem-sernatur/
