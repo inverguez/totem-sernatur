@@ -45,6 +45,10 @@ function dalePlay(videoNum)
 	document.getElementsByTagName('video')[0].play();
 }
 
+function volver(){
+  window.history.back();
+}
+
 //Bloquear zoom
 //https://stackoverflow.com/a/37712966/3369131
 /*function touchHandler(event){

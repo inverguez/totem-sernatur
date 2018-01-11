@@ -25,7 +25,8 @@ ul{
   flex: 0 0 auto;
   display: block;
 	width: 100%;
-	background: #f1501b url(barra_sernatur.png) no-repeat 50% 0;
+	background: #fff url(barra_sernatur.png) no-repeat 50% 100%;
+	background-size: auto 100%;
 	padding:0;
 	margin:0;
 	font-family: sans-serif;
@@ -93,7 +94,23 @@ iframe{
 	border:0;
 }
 
-
+/* Botones para volver e inicio */
+form{
+	position: absolute;
+	left:5px;
+	bottom:15px;
+	width: 100px;
+}
+form button{
+	background-color: transparent;
+	border: none;
+}
+form button img{
+	width: 75%;
+}
+form button[type=submit] img{
+	width: 80%;
+}
 
  /* The Modal (background) */
 .modal {
