@@ -23,7 +23,7 @@ function ejecuta()
 	
 	//Intento de abrir en pantalla completa
 	//https://msdn.microsoft.com/en-us/library/dn265028(v=vs.85).aspx
-	document.getElementsByTagName('body')[0].requestFullscreen();
+	//document.getElementsByTagName('body')[0].requestFullscreen();
 }
 
 window[ addEventListener ? 'addEventListener' : 'attachEvent' ]( addEventListener ? 'load' : 'onload', ejecuta );
@@ -46,7 +46,9 @@ function dalePlay(videoNum)
 }
 
 function volver(){
-  window.history.back();
+	//No se puede, a menos que --disable-web-security --user-data-dir
+	//Danger https://stackoverflow.com/questions/3102819/disable-same-origin-policy-in-chrome
+	document.getElementsByTagName('iframe')[0].contentWindow.history.back; 
 }
 
 //Bloquear zoom
